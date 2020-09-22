@@ -1,0 +1,6 @@
+{
+  "component_id": "mygolangproject",
+  "default_message": "Default message from cookiecutter.json",
+  "message": "Hello world",
+  "debug_mode": "n"
+}

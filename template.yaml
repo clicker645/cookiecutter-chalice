@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: cookiecutter-chalice
+  title: Exmaple cookiecutter-chalice
+  description: Create a API use AWS Chalice
+  tags:
+    - example
+    - python
+    - chalice
+    - aws
+spec:
+  owner: belousov.d@light-it.net
+  templater: cookiecutter
+  type: service # TODO api
+  path: '.'
+  schema:
+    required:
+      - component_id
+      - message
+      - debug_mode
+    properties:
+      component_id:
+        title: Name
+        type: string
+        description: Unique name of the component
+      message:
+        title: Message
+        type: string
+        description: Default message for /home endpoint
+      debug_mode:
+        title: Enable Logging
+        type: string
+        enum:
+          - "y"
+          - "n"
+        default: "n"
