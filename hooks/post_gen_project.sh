@@ -2,5 +2,6 @@
 
 echo "! =========== Post actions =========== !"
 
-ls -la /usr/bin
+wget -O get-pip.py https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
 python -m pip install chalice
