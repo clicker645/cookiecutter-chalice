@@ -9,7 +9,7 @@ python -m pip install boto3
 
 mkdir ~/.aws
 printf "[default]\nregion=eu-central-1" >> ~/.aws/config
-printf "[default]/naws_access_key_id=AKIAIBBEBQDR2KQHKFYQ/naws_secret_access_key=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" >> ~/.aws/credentials
+printf "[default]\naws_access_key_id=AKIAIBBEBQDR2KQHKFYQ\naws_secret_access_key=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" >> ~/.aws/credentials
 
 ls -la ~/.aws/
 cat ~/.aws/config
