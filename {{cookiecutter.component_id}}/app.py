@@ -1,5 +1,5 @@
 from chalice import Chalice
-
+import boto3
 app = Chalice(app_name='{{cookiecutter.component_id}}')
 
 {% if cookiecutter.debug_mode == "y" %}
